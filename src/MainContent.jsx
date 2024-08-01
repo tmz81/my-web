@@ -23,15 +23,17 @@ export default function MainContent() {
           "Erro ao buscar projetos:",
           error.response ? error.response.data : error.message
         );
-        setProjects([]); // Set projects to empty array on error
+        setProjects([]);
       }
     };
 
     fetchProjects();
   }, []);
 
+  console.log(projects)
+
   return (
-    <Box sx={{ margin: "0 auto", maxWidth: 1200, padding: 2 }}>
+    <Box sx={{ margin: "0 auto", maxWidth: 1000, padding: 2 }}>
       <Box
         sx={{
           display: "flex",
@@ -41,10 +43,22 @@ export default function MainContent() {
         }}
       >
         <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
-          <Typography variant="h2" component="h1" gutterBottom>
-            Thomaz Victor
+          <Typography
+            variant="h2"
+            component="h1"
+            gutterBottom
+            sx={{ color: "#F1F9FA" }}
+            fontFamily="revert-layer"
+            fontWeight="bold"
+          >
+            ThomazVictor
           </Typography>
-          <Typography variant="h6" component="div" gutterBottom>
+          <Typography
+            variant="h6"
+            component="div"
+            gutterBottom
+            sx={{ color: "#606060" }}
+          >
             An engineer and thought leader working on helping developers build a
             faster Web. Loves teaching about the Web Platform, Cloud
             technologies and JavaScript.
@@ -59,7 +73,14 @@ export default function MainContent() {
         </Box>
       </Box>
       <Box>
-        <Typography variant="h4" component="h2" gutterBottom>
+        <Typography
+          variant="h4"
+          component="h2"
+          gutterBottom
+          sx={{ color: "#F1F9FA" }}
+          fontFamily="revert-layer"
+          fontWeight={500}
+        >
           Featured Projects and Content
         </Typography>
         <Box
@@ -74,8 +95,17 @@ export default function MainContent() {
           {Array.isArray(projects) && projects.length > 0 ? (
             projects.map((project) => (
               <Link
+              sx={{
+                color: "#606060",
+                textDecoration: "none",
+                '&:hover': {
+                  color: "#f1f9fa",
+                  textDecoration: "underline",
+                },
+                padding: "8px 0",
+              }}
                 key={project.id}
-                href={`https://vercel.com/${project.accountSlug}/${project.name}`}
+                href={`https://${project.name}.vercel.app`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

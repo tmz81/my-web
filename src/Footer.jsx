@@ -3,7 +3,7 @@ import img from "./assets/signaturemaker.net.png";
 
 function Footer() {
   return (
-    <Box sx={{ p: 1, textAlign: "center" }}>
+    <Box sx={{ p: 1, textAlign: "center", color: "#f1f9f8" }}>
       <Box sx={{ display: "flex", justifyContent: "center", mb: 4 }}>
         <Link href="https://github.com/tmz81" color="inherit" underline="none" sx={{ mx: 2 }}>
           GitHub
@@ -12,7 +12,7 @@ function Footer() {
           LinkedIn
         </Link>
       </Box>
-      <Typography variant="body2" color="inherit">
+      <Typography variant="body2" color="inherit" sx={{color: "#606060"}}>
         Designed & built by
       </Typography>
       <Typography color="inherit">
