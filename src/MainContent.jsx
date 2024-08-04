@@ -1,7 +1,7 @@
-import { Box, Typography, Link } from "@mui/material";
-import img from "./assets/tmz-comic.png";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { Box, Typography, Link } from "@mui/material";
+import axios from "axios";
+import img from "./assets/tmz-comic.jpeg";
 
 export default function MainContent() {
   const [projects, setProjects] = useState([]);
@@ -9,8 +9,6 @@ export default function MainContent() {
   useEffect(() => {
     const fetchProjects = async () => {
       const token = import.meta.env.VITE_VERCEL_TOKEN;
-      console.log("Vercel Token:", token); // Verificação do token
-
       try {
         const response = await axios.get("https://api.vercel.com/v9/projects", {
           headers: {
@@ -29,8 +27,6 @@ export default function MainContent() {
 
     fetchProjects();
   }, []);
-
-  console.log(projects)
 
   return (
     <Box sx={{ margin: "0 auto", maxWidth: 1000, padding: 2 }}>
@@ -68,7 +64,7 @@ export default function MainContent() {
           <img
             src={img}
             alt="Thomaz Victor"
-            style={{ width: "75%", maxWidth: 300 }}
+            style={{ width: "75%", maxWidth: 300, borderRadius: "16px" }}
           />
         </Box>
       </Box>
