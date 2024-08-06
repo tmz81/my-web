@@ -43,7 +43,7 @@ export default function MainContent() {
             variant="h2"
             component="h1"
             gutterBottom
-            sx={{ color: "#F1F9FA" }}
+            sx={{ color: "#F1F9FA", fontSize: { xs: "2rem", md: "4rem" } }}
             fontFamily="revert-layer"
             fontWeight="bold"
           >
@@ -53,14 +53,14 @@ export default function MainContent() {
             variant="h6"
             component="div"
             gutterBottom
-            sx={{ color: "#606060" }}
+            sx={{ color: "#606060", fontSize: { xs: "1rem", md: "1.25rem" } }}
           >
             An engineer and thought leader working on helping developers build a
             faster Web. Loves teaching about the Web Platform, Cloud
             technologies and JavaScript.
           </Typography>
         </Box>
-        <Box sx={{ textAlign: "center", mt: { xs: 2, md: 0 } }}>
+        <Box sx={{ textAlign: "center", m: { xs: 2, md: 0 } }}>
           <img
             src={img}
             alt="Thomaz Victor"
@@ -73,7 +73,7 @@ export default function MainContent() {
           variant="h4"
           component="h2"
           gutterBottom
-          sx={{ color: "#F1F9FA" }}
+          sx={{ color: "#F1F9FA", fontSize: { xs: "1.5rem", md: "2rem" } }}
           fontFamily="revert-layer"
           fontWeight={500}
         >
