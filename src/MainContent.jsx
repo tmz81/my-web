@@ -91,15 +91,15 @@ export default function MainContent() {
           {Array.isArray(projects) && projects.length > 0 ? (
             projects.map((project) => (
               <Link
-              sx={{
-                color: "#606060",
-                textDecoration: "none",
-                '&:hover': {
-                  color: "#f1f9fa",
-                  textDecoration: "underline",
-                },
-                padding: "8px 0",
-              }}
+                sx={{
+                  color: "#606060",
+                  textDecoration: "none",
+                  "&:hover": {
+                    color: "#f1f9fa",
+                    textDecoration: "underline",
+                  },
+                  padding: "8px 0",
+                }}
                 key={project.id}
                 href={`https://${project.name}.vercel.app`}
                 target="_blank"
@@ -109,7 +109,12 @@ export default function MainContent() {
               </Link>
             ))
           ) : (
-            <Typography component="span">Nenhum projeto encontrado.</Typography>
+            <Typography
+              sx={{ color: "#606060", fontSize: { xs: "1rem", md: "1.25rem" } }}
+              component="span"
+            >
+              No project found.
+            </Typography>
           )}
         </Box>
       </Box>
