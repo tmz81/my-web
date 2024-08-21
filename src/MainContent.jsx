@@ -89,25 +89,27 @@ export default function MainContent() {
           }}
         >
           {Array.isArray(projects) && projects.length > 0 ? (
-            projects.map((project) => (
-              <Link
-                sx={{
-                  color: "#606060",
-                  textDecoration: "none",
-                  "&:hover": {
-                    color: "#f1f9fa",
-                    textDecoration: "underline",
-                  },
-                  padding: "8px 0",
-                }}
-                key={project.id}
-                href={`https://${project.name}.vercel.app`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Typography component="span">{project.name}</Typography>
-              </Link>
-            ))
+            projects
+              .filter((project) => project.name !== "tmz81")
+              .map((project) => (
+                <Link
+                  sx={{
+                    color: "#606060",
+                    textDecoration: "none",
+                    "&:hover": {
+                      color: "#f1f9fa",
+                      textDecoration: "underline",
+                    },
+                    padding: "8px 0",
+                  }}
+                  key={project.id}
+                  href={`https://${project.name}.vercel.app`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Typography component="span">{project.name}</Typography>
+                </Link>
+              ))
           ) : (
             <Typography
               sx={{ color: "#606060", fontSize: { xs: "1rem", md: "1.25rem" } }}
