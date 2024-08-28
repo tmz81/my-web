@@ -3,7 +3,6 @@ import img from "../assets/tmz-comic.jpeg";
 import FeaturesAndProjects from "../components/FeaturesAndProjects";
 
 export default function MainContent() {
-  
   return (
     <Box sx={{ margin: "0 auto", maxWidth: 1000, padding: 2 }}>
       <Box

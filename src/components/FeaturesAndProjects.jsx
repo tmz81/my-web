@@ -1,7 +1,6 @@
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Container, Link, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
 
 export default function FeaturesAndProjects() {
   const [projects, setProjects] = useState([]);
@@ -29,7 +28,7 @@ export default function FeaturesAndProjects() {
   }, []);
 
   return (
-    <Box>
+    <Container>
       <Typography
         variant="h4"
         component="h2"
@@ -46,7 +45,7 @@ export default function FeaturesAndProjects() {
           display: "flex",
           flexWrap: "wrap",
           flexDirection: "column",
-          gap: 2,
+          gap: 1,
         }}
       >
         {Array.isArray(projects) && projects.length > 0 ? (
@@ -80,6 +79,6 @@ export default function FeaturesAndProjects() {
           </Typography>
         )}
       </Box>
-    </Box>
+    </Container>
   );
 }
