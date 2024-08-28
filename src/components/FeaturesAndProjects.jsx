@@ -45,7 +45,6 @@ export default function FeaturesAndProjects() {
           display: "flex",
           flexWrap: "wrap",
           flexDirection: "column",
-          gap: 1,
         }}
       >
         {Array.isArray(projects) && projects.length > 0 ? (
