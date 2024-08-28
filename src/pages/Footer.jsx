@@ -1,5 +1,5 @@
 import { Box, Typography, Link } from "@mui/material";
-import img from "./assets/signaturemaker.net.png";
+import img from "../assets/signaturemaker.net.png";
 
 function Footer() {
   return (

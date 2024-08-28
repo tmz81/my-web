@@ -1,5 +1,5 @@
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
-import img from "./assets/signaturemaker.net.png";
+import img from "../assets/signaturemaker.net.png";
 
 export default function Header() {
   return (
