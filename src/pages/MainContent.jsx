@@ -42,7 +42,7 @@ export default function MainContent() {
             }}
           >
             A <span style={{ color: "#f1f9fa" }}>Web Developer</span> who
-            creates Micro SaaS that transforms ideas into real products. I've
+            creates and transforms ideas into real products. I've
             been a{" "}
             <span style={{ color: "#f1f9fa" }}>Nodejs devotee since 2019</span>,
             where I started my journey with{" "}
