@@ -15,24 +15,39 @@ export default function MainContent() {
       >
         <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
           <Typography
-            variant="h2"
-            component="h1"
+            variant="h6"
+            component="div"
             gutterBottom
-            sx={{ color: "#F1F9FA", fontSize: { xs: "2rem", md: "4rem" } }}
-            fontFamily="revert-layer"
-            fontWeight="bold"
+            sx={{
+              color: "#606060",
+              fontSize: { xs: "1rem", md: "2rem" },
+              fontFamily: "revert-layer",
+              fontWeight: "bold",
+            }}
           >
-            ThomazVictor
+            If you don't know me yet... Nice to meet you. My name is
+            <span style={{ color: "#f1f9fa" }}> ThomazVictor</span>, better
+            known as <span style={{ color: "#f1f9fa" }}>Tmz81</span>
           </Typography>
+          <br />
+          <br />
           <Typography
             variant="h6"
             component="div"
             gutterBottom
-            sx={{ color: "#606060", fontSize: { xs: "1rem", md: "1.25rem" } }}
+            sx={{
+              color: "#606060",
+              fontSize: { xs: "1rem", md: "1.50rem" },
+              fontFamily: "revert-layer",
+            }}
           >
-            An engineer and thought leader working on helping developers build a
-            faster Web. Loves teaching about the Web Platform, Cloud
-            technologies and JavaScript.
+            A <span style={{ color: "#f1f9fa" }}>Web Developer</span> who
+            creates Micro SaaS that transforms ideas into real products. I've
+            been a{" "}
+            <span style={{ color: "#f1f9fa" }}>Nodejs devotee since 2019</span>,
+            where I started my journey with{" "}
+            <span style={{ color: "#f1f9fa" }}>programming</span>, and since
+            then I've been diving deeper and deeper into this world of codes.
           </Typography>
         </Box>
         <Box sx={{ textAlign: "center", m: { xs: 2, md: 0 } }}>

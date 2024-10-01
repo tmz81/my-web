@@ -37,7 +37,7 @@ export default function FeaturesAndProjects() {
         fontFamily="revert-layer"
         fontWeight={500}
       >
-        Featured Projects and Content
+        Featured Projects and Content:
       </Typography>
       <Box
         component="div"
@@ -74,7 +74,7 @@ export default function FeaturesAndProjects() {
             sx={{ color: "#606060", fontSize: { xs: "1rem", md: "1.25rem" } }}
             component="span"
           >
-            No project found.
+            Loading...
           </Typography>
         )}
       </Box>
