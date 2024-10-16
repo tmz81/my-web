@@ -49,7 +49,12 @@ export default function FeaturesAndProjects() {
       >
         {Array.isArray(projects) && projects.length > 0 ? (
           projects
-            .filter((project) => project.name !== "tmz81")
+            .filter(
+              (project) =>
+                project.name !== "tmz81" &&
+                project.name !== "tmz81-react-calculator" &&
+                project.name !== "tmz81-quiz-app"
+            )
             .map((project) => (
               <Link
                 sx={{

@@ -1,16 +1,18 @@
 import { Box, Typography } from "@mui/material";
-import img from "../assets/tmz-comic.jpeg";
+import img from "../assets/tmz-3.jpg";
 import FeaturesAndProjects from "../components/FeaturesAndProjects";
 
 export default function MainContent() {
   return (
-    <Box sx={{ margin: "0 auto", maxWidth: 1000, padding: 2 }}>
+    <Box sx={{ margin: "0 auto", maxWidth: 1200, padding: 2 }}>
       <Box
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           justifyContent: "space-between",
+          mb: 5,
+          mt: 8
         }}
       >
         <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
@@ -29,8 +31,6 @@ export default function MainContent() {
             <span style={{ color: "#f1f9fa" }}> ThomazVictor</span>, better
             known as <span style={{ color: "#f1f9fa" }}>Tmz81</span>
           </Typography>
-          <br />
-          <br />
           <Typography
             variant="h6"
             component="div"
@@ -42,8 +42,7 @@ export default function MainContent() {
             }}
           >
             A <span style={{ color: "#f1f9fa" }}>Web Developer</span> who
-            creates and transforms ideas into real products. I've
-            been a{" "}
+            creates and transforms ideas into real products. I've been a{" "}
             <span style={{ color: "#f1f9fa" }}>Nodejs devotee since 2019</span>,
             where I started my journey with{" "}
             <span style={{ color: "#f1f9fa" }}>programming</span>, and since
@@ -51,10 +50,11 @@ export default function MainContent() {
           </Typography>
         </Box>
         <Box sx={{ textAlign: "center", m: { xs: 2, md: 0 } }}>
+        <br />
           <img
             src={img}
             alt="Thomaz Victor"
-            style={{ width: "75%", maxWidth: 300, borderRadius: "16px" }}
+            style={{ width: "90%", maxWidth: 530, borderRadius: "16px" }}
           />
         </Box>
       </Box>
