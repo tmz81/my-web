@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import img from "../assets/tmz-3.jpg";
+import img from "../assets/tmz81-studioGhibli.jpeg";
 import FeaturesAndProjects from "../components/FeaturesAndProjects";
 
 export default function MainContent() {
@@ -54,7 +54,7 @@ export default function MainContent() {
           <img
             src={img}
             alt="Thomaz Victor"
-            style={{ width: "90%", maxWidth: 530, borderRadius: "16px" }}
+            style={{ width: "70%", maxWidth: 530, borderRadius: "16px" }}
           />
         </Box>
       </Box>
