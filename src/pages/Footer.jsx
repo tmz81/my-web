@@ -5,7 +5,7 @@ function Footer() {
   return (
     <Box sx={{ p: 1, textAlign: "center", color: "#f1f9f8" }}>
       <Box sx={{ display: "flex", justifyContent: "center", mb: 4 }}>
-      <Link href="https://www.tiktok.com/@sportsac_" color="inherit" underline="none" sx={{ mx: 2 }}>
+      <Link href="https://www.tiktok.com/@tmz_81" color="inherit" underline="none" sx={{ mx: 2 }}>
           TikTok
         </Link>
         <Link href="https://github.com/tmz81" color="inherit" underline="none" sx={{ mx: 2 }}>
